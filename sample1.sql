@@ -3,7 +3,7 @@ USE Movies
 
 SELECT
 	FilmName FilmTitle
-	-- We Can Ignore AS KeyWord as In the Above line 
+	-- We Can Ignore AS KeyWord as In the Above line , Alias is Just Seperated By Space
 	, FilmReleaseDate AS [Date]
 	, FilmRunTimeMinutes AS 'Timing (Minutes)'
 	-- Single Quote OR Brackets if there is a Space in Name 
