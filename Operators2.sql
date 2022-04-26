@@ -8,7 +8,15 @@ WHERE
     FilmReleaseDate = '2015-01-01'
     FilmReleaseDate = '2015-01-01' OR '2015-01-01'  
     MONTH(FilmReleaseDate) = 1
-    -- MONTH(FilmReleaseDate) Is Like a Calculated Column  
+    -- MONTH(FilmReleaseDate) Is Like a Calculated Column 
+    --  And Since We CAN NOT use Alias Names in the WHERE Clause , We Put the Calculation Directly in the WHERE Clause
+    /*
+    It is Like the Following 
+    SELECT MONTH(FilmReleaseDate) as Month
+    WHERE Month = 1
+    But We CAN NOT do this Unfortuantely 
+    */ 
+    
     
     -- As you Can see, Using Function To Evaluate each Value in the Column , Then Using the WHERE clause on those "Calculated" New Values 
     
